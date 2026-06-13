@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #312e81);
+  color: #eff6ff;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.passwordBox {
+  width: min(420px, 100%);
+  padding: 24px;
+  border-radius: 18px;
+  background: rgba(17, 24, 39, 0.92);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+}
+
+h1 {
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.passwordBoxin {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.passwordBoxin input,
+.field input,
+.generate-btn,
+.passwordBoxin button {
+  border-radius: 10px;
+  border: 1px solid #475569;
+}
+
+.passwordBoxin input {
+  flex: 1;
+  padding: 10px 12px;
+  background: #111827;
+  color: #f8fafc;
+}
+
+.passwordBoxin button,
+.generate-btn {
+  padding: 10px 12px;
+  background: #8b5cf6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.passwordBoxin button:hover,
+.generate-btn:hover {
+  transform: translateY(-1px);
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.field input {
+  width: 90px;
+  padding: 8px;
+  background: #111827;
+  color: #fff;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #e5eefb;
+}
+
+.generate-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #bfdbfe;
+}
